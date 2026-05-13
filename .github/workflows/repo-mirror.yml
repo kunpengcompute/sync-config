@@ -1,0 +1,33 @@
+# Enable job 2026-05-13
+name: Kunpeng gitcode repos mirror periodic job
+
+on:
+  workflow_dispatch:
+  pull_request:
+    # Runs at every pull requests submitted in master branch 
+    branches: [ master ]
+    paths:
+    - '.github/workflows/**'
+  schedule:
+    # Runs at 01:00 UTC (9:00 AM Beijing) every day
+    - cron:  '0 1 * * *'
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    env:
+      PIP_BREAK_SYSTEM_PACKAGES: "1"
+    
+    steps:
+    - name: Mirror the gitcode/Kunpeng org repos to github/kunpengcompute.
+      uses: Yikun/hub-mirror-action@master
+      with:
+        src: gitcode/Kunpeng
+        dst: github/Kunpengcompute
+        src_token: ${{ secrets.SYNC_KUNPENG_GITCODE_TOKEN }}
+        dst_key: ${{ secrets.SYNC_KUNPENG_PRIVATE_KEY }}
+        dst_token:  ${{ secrets.SYNC_KUNPENG_TOKEN }}
+        account_type: org
+        clone_style: ssh
+        force_update: true
+        debug: true
