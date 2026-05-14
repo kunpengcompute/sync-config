@@ -23,7 +23,7 @@ jobs:
       uses: Yikun/hub-mirror-action@master
       with:
         src: gitcode/Kunpeng
-        dst: github/Kunpengcompute
+        dst: github/kunpengcompute
         src_token: ${{ secrets.SYNC_KUNPENG_GITCODE_TOKEN }}
         dst_key: ${{ secrets.SYNC_KUNPENG_PRIVATE_KEY }}
         dst_token:  ${{ secrets.SYNC_KUNPENG_TOKEN }}
