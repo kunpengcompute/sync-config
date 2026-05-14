@@ -22,7 +22,7 @@ jobs:
     - name: Mirror the gitcode/Kunpeng org repos to github/kunpengcompute.
       uses: Yikun/hub-mirror-action@master
       with:
-        src: gitcode/Kunpeng
+        src: gitcode/kunpengcompute
         dst: github/kunpengcompute
         src_token: ${{ secrets.SYNC_KUNPENG_GITCODE_TOKEN }}
         dst_key: ${{ secrets.SYNC_KUNPENG_PRIVATE_KEY }}
