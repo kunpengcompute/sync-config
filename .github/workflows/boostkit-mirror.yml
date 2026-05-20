@@ -31,3 +31,4 @@ jobs:
         clone_style: ssh
         force_update: true
         debug: true
+        mappings: 'mysql-server=>mysql-server-mirror,snappy=>snappy-mirror,hadoop=>hadoop-mirror,zstd=>zstd-mirror,KAE=>KAE-mirror,hyperscan=>hyperscan-mirror,boostkit-bigdata=>bigdata-mirror,infra=>infra-mirror'
