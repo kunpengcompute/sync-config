@@ -32,4 +32,4 @@ jobs:
         force_update: true
         debug: true
         black_list: "src-openeuler-gcc,src-openEuler-libvirt,src-openEuler-qemu,openEuler-Kernel"
-        mappings: 'hucx=>hucx-mirror,xugc=>xugc-mirror,hmpi=<hmpi-mirror'
+        mappings: 'hucx=>hucx-mirror,xugc=>xugc-mirror,hmpi=>hmpi-mirror'
