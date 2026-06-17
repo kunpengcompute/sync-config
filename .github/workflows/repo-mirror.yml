@@ -1,35 +1,299 @@
-# Enable job 2026-05-13
-name: Kunpeng gitcode repos mirror periodic job
+# Kunpeng+BoostKit Community Mirror — unified workflow
+# Mirrors both gitcode/kunpengcompute and gitcode/BoostKit → github/kunpengcompute
+# Uses community-mirror scripts
+
+name: Kunpeng+BoostKit Community Mirror
 
 on:
   workflow_dispatch:
   pull_request:
-    # Runs at every pull requests submitted in master branch 
     branches: [ master ]
     paths:
     - '.github/workflows/**'
   schedule:
     # Runs at 01:00 UTC (9:00 AM Beijing) every day
-    - cron:  '0 1 * * *'
+    - cron: '0 1 * * *'
 
 jobs:
-  mirror:
+  # ═══════════════════════════════════════════════════════════════════
+  # Prepare: Fetch repo lists from both source orgs and split into batches
+  # ═══════════════════════════════════════════════════════════════════
+
+  # ── Prepare: Kunpeng source (gitcode/kunpengcompute) ──
+  prepare-kunpeng:
     runs-on: ubuntu-latest
-    env:
-      PIP_BREAK_SYSTEM_PACKAGES: "1"
-    
+    outputs:
+      batches: ${{ steps.split.outputs.batches }}
     steps:
-    - name: Mirror the gitcode/Kunpeng org repos to github/kunpengcompute.
-      uses: Yikun/hub-mirror-action@master
+    - name: Checkout community-mirror (scripts)
+      uses: actions/checkout@v4
       with:
-        src: gitcode/kunpengcompute
-        dst: github/kunpengcompute
-        src_token: ${{ secrets.SYNC_KUNPENG_GITCODE_TOKEN }}
-        dst_key: ${{ secrets.SYNC_KUNPENG_PRIVATE_KEY }}
-        dst_token:  ${{ secrets.SYNC_KUNPENG_TOKEN }}
-        account_type: org
-        clone_style: ssh
-        force_update: true
-        debug: true
-        black_list: "src-openeuler-gcc,src-openEuler-libvirt,src-openEuler-qemu,openEuler-Kernel"
-        mappings: 'hucx=>hucx-mirror,xucg=>xucg-mirror,hmpi=>hmpi-mirror'
+        repository: huanglei0308/community-mirror
+        path: _mirror-hub
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Fetch repos and split into batches
+      id: split
+      run: |
+        pip install requests -q
+        python _mirror-hub/scripts/split_batches.py \
+          --src gitcode/kunpengcompute \
+          --src-token "${{ secrets.SYNC_KUNPENG_GITCODE_TOKEN }}" \
+          --account-type org \
+          --black-list "src-openeuler-gcc,src-openEuler-libvirt,src-openEuler-qemu,openEuler-Kernel" \
+          --batch-size 80
+
+  # ── Prepare: BoostKit source (gitcode/BoostKit) ──
+  prepare-boostkit:
+    runs-on: ubuntu-latest
+    outputs:
+      batches: ${{ steps.split.outputs.batches }}
+    steps:
+    - name: Checkout community-mirror (scripts)
+      uses: actions/checkout@v4
+      with:
+        repository: huanglei0308/community-mirror
+        path: _mirror-hub
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Fetch repos and split into batches
+      id: split
+      run: |
+        pip install requests -q
+        python _mirror-hub/scripts/split_batches.py \
+          --src gitcode/BoostKit \
+          --src-token "${{ secrets.SYNC_KUNPENG_GITCODE_TOKEN }}" \
+          --account-type org \
+          --batch-size 80
+
+  # ═══════════════════════════════════════════════════════════════════
+  # Mirror: Process batches from both sources in parallel
+  # ═══════════════════════════════════════════════════════════════════
+
+  # ── Mirror: Kunpeng batches ──
+  mirror-kunpeng:
+    name: mirror-kunpeng-batch-${{ strategy.job-index }}
+    needs: prepare-kunpeng
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    strategy:
+      fail-fast: false
+      matrix:
+        batch_list: ${{ fromJSON(needs.prepare-kunpeng.outputs.batches) }}
+    steps:
+    - name: Checkout community-mirror (scripts)
+      uses: actions/checkout@v4
+      with:
+        repository: huanglei0308/community-mirror
+        path: _mirror-hub
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: pip install gitpython requests -q
+
+    - name: Mirror batch
+      id: mirror
+      continue-on-error: true
+      run: |
+        python _mirror-hub/scripts/mirror_repos.py \
+          --src gitcode/kunpengcompute \
+          --dst github/kunpengcompute \
+          --src-token "${{ secrets.SYNC_KUNPENG_GITCODE_TOKEN }}" \
+          --dst-token "${{ secrets.SYNC_KUNPENG_TOKEN }}" \
+          --dst-key "${{ secrets.SYNC_KUNPENG_PRIVATE_KEY }}" \
+          --account-type org \
+          --static-list "${{ matrix.batch_list }}" \
+          --force-update \
+          --clone-style ssh \
+          --workflow kunpeng-mirror \
+          --mappings "hucx=>hucx-mirror,xucg=>xucg-mirror,hmpi=>hmpi-mirror" \
+          --output batch_results.json
+
+    - name: Upload batch results
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: kunpeng-batch-results-${{ strategy.job-index }}
+        path: batch_results.json
+        retention-days: 1
+
+  # ── Mirror: BoostKit batches ──
+  mirror-boostkit:
+    name: mirror-boostkit-batch-${{ strategy.job-index }}
+    needs: prepare-boostkit
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    strategy:
+      fail-fast: false
+      matrix:
+        batch_list: ${{ fromJSON(needs.prepare-boostkit.outputs.batches) }}
+    steps:
+    - name: Checkout community-mirror (scripts)
+      uses: actions/checkout@v4
+      with:
+        repository: huanglei0308/community-mirror
+        path: _mirror-hub
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: pip install gitpython requests -q
+
+    - name: Mirror batch
+      id: mirror
+      continue-on-error: true
+      run: |
+        python _mirror-hub/scripts/mirror_repos.py \
+          --src gitcode/BoostKit \
+          --dst github/kunpengcompute \
+          --src-token "${{ secrets.SYNC_KUNPENG_GITCODE_TOKEN }}" \
+          --dst-token "${{ secrets.SYNC_KUNPENG_TOKEN }}" \
+          --dst-key "${{ secrets.SYNC_KUNPENG_PRIVATE_KEY }}" \
+          --account-type org \
+          --static-list "${{ matrix.batch_list }}" \
+          --force-update \
+          --clone-style ssh \
+          --workflow boostkit-mirror \
+          --mappings "mysql-server=>mysql-server-mirror,snappy=>snappy-mirror,hadoop=>hadoop-mirror,zstd=>zstd-mirror,KAE=>KAE-mirror,hyperscan=>hyperscan-mirror,boostkit-bigdata=>bigdata-mirror,infra=>infra-mirror" \
+          --output batch_results.json
+
+    - name: Upload batch results
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: boostkit-batch-results-${{ strategy.job-index }}
+        path: batch_results.json
+        retention-days: 1
+
+  # ═══════════════════════════════════════════════════════════════════
+  # Aggregate: Merge all results, diagnose, update README, deploy
+  # ═══════════════════════════════════════════════════════════════════
+  aggregate:
+    needs: [mirror-kunpeng, mirror-boostkit]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - name: Checkout this repo
+      uses: actions/checkout@v4
+
+    - name: Checkout community-mirror (scripts)
+      uses: actions/checkout@v4
+      with:
+        repository: huanglei0308/community-mirror
+        path: _mirror-hub
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Download all batch results
+      uses: actions/download-artifact@v4
+      with:
+        pattern: "*-batch-results-*"
+        path: batch-results
+
+    - name: Merge batch results into one results.json
+      run: |
+        python3 << PYEOF
+        import json, glob, time
+
+        results = {
+            "src": "gitcode/kunpengcompute+BoostKit",
+            "dst": "github/kunpengcompute",
+            "workflow": "repo-mirror",
+            "total": 0, "success": 0, "failed": 0, "skipped": 0,
+            "success_list": [], "failed_list": [], "skipped_list": [],
+            "errors": {},
+        }
+
+        for f in sorted(glob.glob("batch-results/*/batch_results.json")):
+            with open(f) as fp:
+                b = json.load(fp)
+            results["total"] += b.get("total", 0)
+            results["success"] += b.get("success", 0)
+            results["failed"] += b.get("failed", 0)
+            results["skipped"] += b.get("skipped", 0)
+            results["success_list"].extend(b.get("success_list", []))
+            results["failed_list"].extend(b.get("failed_list", []))
+            results["skipped_list"].extend(b.get("skipped_list", []))
+            results["errors"].update(b.get("errors", {}))
+
+        results["timestamp"] = time.strftime(
+            "%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+
+        with open("results.json", "w") as f:
+            json.dump(results, f, indent=2, ensure_ascii=False)
+
+        print(f"Total: {results['total']} = "
+              f"S:{results['success']} + F:{results['failed']} + Sk:{results['skipped']}")
+        PYEOF
+
+    - name: Diagnose failures (kunpengcompute source)
+      continue-on-error: true
+      run: |
+        pip install requests -q
+        python _mirror-hub/scripts/diagnose_failures.py results.json \
+          --src gitcode/kunpengcompute \
+          --dst github/kunpengcompute \
+          --src-token "${{ secrets.SYNC_KUNPENG_GITCODE_TOKEN }}" \
+          --dst-token "${{ secrets.SYNC_KUNPENG_TOKEN }}" \
+          --account-type org
+
+    - name: Merge with existing results on gh-pages
+      run: |
+        REPO=$(echo "${{ github.repository }}" | cut -d/ -f2)
+        MERGE_URL="https://${{ github.repository_owner }}.github.io/${REPO}/results.json"
+        echo "Merging with: $MERGE_URL"
+        python _mirror-hub/scripts/merge_results.py results.json \
+          --merge-url "$MERGE_URL" \
+          --output results.json
+
+    - name: Update README with sync status
+      run: python update_readme.py
+
+    - name: Commit and push updated README
+      run: |
+        git config user.name 'github-actions[bot]'
+        git config user.email 'github-actions[bot]@users.noreply.github.com'
+        git add README.md
+        if git diff --cached --quiet; then
+          echo "No changes to README"
+        else
+          git commit -m "Update sync status [skip ci]"
+          git pull --rebase
+          git push
+        fi
+
+    - name: Prepare publish directory
+      run: |
+        rm -rf _mirror-hub _publish
+        mkdir _publish
+        cp results.json _publish/
+
+    - name: Deploy results to gh-pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: _publish
+        publish_branch: gh-pages
+        keep_files: false
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
+        commit_message: 'Update sync results [skip ci]'
