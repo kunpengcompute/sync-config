@@ -101,7 +101,7 @@ jobs:
         python-version: '3.x'
 
     - name: Install dependencies
-      run: pip install gitpython requests -q
+      run: pip install requests -q
 
     - name: Mirror batch
       id: mirror
@@ -116,6 +116,7 @@ jobs:
           --account-type org \
           --static-list "${{ matrix.batch_list }}" \
           --force-update \
+          --clear-branch-rules \
           --clone-style ssh \
           --workflow kunpeng-mirror \
           --mappings "hucx=>hucx-mirror,xucg=>xucg-mirror,hmpi=>hmpi-mirror" \
@@ -152,7 +153,7 @@ jobs:
         python-version: '3.x'
 
     - name: Install dependencies
-      run: pip install gitpython requests -q
+      run: pip install requests -q
 
     - name: Mirror batch
       id: mirror
@@ -167,6 +168,7 @@ jobs:
           --account-type org \
           --static-list "${{ matrix.batch_list }}" \
           --force-update \
+          --clear-branch-rules \
           --clone-style ssh \
           --workflow boostkit-mirror \
           --mappings "mysql-server=>mysql-server-mirror,snappy=>snappy-mirror,hadoop=>hadoop-mirror,zstd=>zstd-mirror,KAE=>KAE-mirror,hyperscan=>hyperscan-mirror,boostkit-bigdata=>bigdata-mirror,infra=>infra-mirror" \
