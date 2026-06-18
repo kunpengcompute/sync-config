@@ -44,7 +44,6 @@ jobs:
           --src gitcode/kunpengcompute \
           --src-token "${{ secrets.SYNC_KUNPENG_GITCODE_TOKEN }}" \
           --account-type org \
-          --black-list "src-openeuler-gcc,src-openEuler-libvirt,src-openEuler-qemu,openEuler-Kernel" \
           --batch-size 80
 
   # ── Prepare: BoostKit source (gitcode/BoostKit) ──
@@ -119,7 +118,6 @@ jobs:
           --clear-branch-rules \
           --clone-style ssh \
           --workflow kunpeng-mirror \
-          --mappings "hucx=>hucx-mirror,xucg=>xucg-mirror,hmpi=>hmpi-mirror" \
           --output batch_results.json
 
     - name: Upload batch results
@@ -171,7 +169,6 @@ jobs:
           --clear-branch-rules \
           --clone-style ssh \
           --workflow boostkit-mirror \
-          --mappings "mysql-server=>mysql-server-mirror,snappy=>snappy-mirror,hadoop=>hadoop-mirror,zstd=>zstd-mirror,KAE=>KAE-mirror,hyperscan=>hyperscan-mirror,boostkit-bigdata=>bigdata-mirror,infra=>infra-mirror" \
           --output batch_results.json
 
     - name: Upload batch results
