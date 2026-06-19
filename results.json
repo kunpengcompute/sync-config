@@ -201,7 +201,7 @@
     },
     "src-openeuler-gcc": {
       "category": "large_file",
-      "message": "gcc-12.3.0.tar.xz is 81.53 MB, exceeds GitHub 100 MB limit"
+      "message": "gcc-9.3.0.tar.xz is 67.27 MB, exceeds GitHub 100 MB limit"
     },
     "src-openEuler-libvirt": {
       "category": "large_file",
@@ -228,7 +228,7 @@
       "message": "Cannot delete 'huawei)' (current default branch on destination)"
     }
   },
-  "timestamp": "2026-06-18T10:58:35Z",
+  "timestamp": "2026-06-19T07:56:26Z",
   "diagnoses": {
     "mysql-server": [
       "Source: API returned HTTP 400",
