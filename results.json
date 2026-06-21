@@ -205,15 +205,15 @@
     },
     "src-openEuler-libvirt": {
       "category": "large_file",
-      "message": "libvirt-9.10.0.tar.xz is 131.14 MB, exceeds GitHub 100 MB limit"
+      "message": "libvirt-9.10.0.tar.xz is 134.23 MB, exceeds GitHub 100 MB limit"
     },
     "src-openEuler-qemu": {
       "category": "large_file",
-      "message": "qemu-5.0.0.tar.xz is 59.53 MB, exceeds GitHub 100 MB limit"
+      "message": "qemu-4.1.0.tar.xz is 51.50 MB, exceeds GitHub 100 MB limit"
     },
     "openEuler-Kernel": {
       "category": "push_failed",
-      "message": "! [remote rejected]           v6.6 -> v6.6 (failed)"
+      "message": "remote: fatal: pack exceeds maximum allowed size (2.00 GiB)"
     },
     "hucx": {
       "category": "branch_delete",
@@ -228,7 +228,7 @@
       "message": "Cannot delete 'huawei)' (current default branch on destination)"
     }
   },
-  "timestamp": "2026-06-20T07:14:14Z",
+  "timestamp": "2026-06-21T07:37:50Z",
   "diagnoses": {
     "mysql-server": [
       "Source: API returned HTTP 400",
