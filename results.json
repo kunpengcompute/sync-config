@@ -3,82 +3,14 @@
   "dst": "github/kunpengcompute",
   "workflow": "repo-mirror",
   "total": 143,
-  "success": 125,
-  "failed": 18,
+  "success": 57,
+  "failed": 86,
   "skipped": 0,
   "success_list": [
-    "virt-efficiency",
-    "CubeSandbox",
-    "kacc_crypto",
-    "OpenViking",
-    "Ultrascan",
-    "LowLatencyLib",
-    "daft",
-    "OmniSkill",
-    "diskann",
-    "OmniCatalyst",
-    "spring-framework",
-    "tomcat",
-    "simdjson",
-    "rapidjson",
-    "fbthrift",
-    "brpc",
-    "kadd-open",
-    "pandas",
-    "numpy",
-    "malloc-bench",
-    "skills",
-    "boostida",
-    "pvm",
-    "ceph",
-    "suricata",
-    "tensorrt-llm",
-    "OmniAdaptor",
-    "flash-engram",
-    "LMCache",
-    "mooncake",
-    "release-management",
-    "Security",
     "SegmentCache",
-    "sonic",
-    "redis-dtoe",
     "reedsolomon",
     "rabitq",
-    "monolith",
-    "kaot",
-    "Brotli4j",
-    "isa-l",
-    "KDADK-TOOLS",
-    "QA",
-    "protobuf",
-    "KUAF",
-    "MicroservicesBench",
-    "cmf",
-    "ceph_BK",
-    "ocf",
-    "mesa",
-    "Kbox-patches",
-    "3FS",
-    "vmi",
-    "rocksdb",
-    "cloud-native",
-    "lz4",
-    "spdk",
-    "cloud-virtual",
-    "vllm_router",
-    "vllm-ops",
-    "velox",
     "boostkit-agreements",
-    "Redis",
-    "folly",
-    ".gitcode",
-    "waas",
-    "zlib",
-    "sonic-cpp",
-    "avx2ki",
-    "kpglibc",
-    "boostcore",
-    "opencv",
     "ffmpeg",
     "libavif",
     "libwebp",
@@ -134,14 +66,82 @@
     "src-openEuler-Kernel"
   ],
   "failed_list": [
+    "virt-efficiency",
+    "CubeSandbox",
+    "kacc_crypto",
+    "OpenViking",
+    "Ultrascan",
+    "LowLatencyLib",
+    "daft",
+    "OmniSkill",
+    "diskann",
+    "OmniCatalyst",
+    "spring-framework",
+    "tomcat",
+    "simdjson",
+    "rapidjson",
+    "fbthrift",
+    "brpc",
+    "kadd-open",
+    "pandas",
+    "numpy",
+    "malloc-bench",
+    "skills",
+    "boostida",
+    "pvm",
     "mysql-server",
+    "ceph",
+    "suricata",
+    "tensorrt-llm",
+    "OmniAdaptor",
+    "flash-engram",
+    "LMCache",
+    "mooncake",
+    "release-management",
+    "Security",
+    "sonic",
+    "redis-dtoe",
+    "monolith",
+    "kaot",
+    "Brotli4j",
+    "isa-l",
+    "KDADK-TOOLS",
+    "QA",
+    "protobuf",
+    "KUAF",
     "snappy",
+    "MicroservicesBench",
+    "cmf",
+    "ceph_BK",
+    "ocf",
+    "mesa",
+    "Kbox-patches",
+    "3FS",
+    "vmi",
+    "rocksdb",
     "hadoop",
+    "cloud-native",
     "zstd",
+    "lz4",
     "KAE",
     "hyperscan",
+    "spdk",
+    "cloud-virtual",
     "boostkit-bigdata",
+    "vllm_router",
+    "vllm-ops",
+    "velox",
+    "Redis",
+    "folly",
     "infra",
+    ".gitcode",
+    "waas",
+    "zlib",
+    "sonic-cpp",
+    "avx2ki",
+    "kpglibc",
+    "boostcore",
+    "opencv",
     "anolis-cloud-kernel",
     "velinux-kernel-dev",
     "velinux-kernel",
@@ -155,37 +155,309 @@
   ],
   "skipped_list": [],
   "errors": {
+    "virt-efficiency": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "CubeSandbox": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "kacc_crypto": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "OpenViking": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "Ultrascan": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "LowLatencyLib": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "daft": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "OmniSkill": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "diskann": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "OmniCatalyst": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "spring-framework": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "tomcat": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "simdjson": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "rapidjson": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "fbthrift": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "brpc": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "kadd-open": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "pandas": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "numpy": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "malloc-bench": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "skills": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "boostida": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "pvm": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
     "mysql-server": {
-      "category": "branch_delete",
-      "message": "Cannot delete '8.0)' (current default branch on destination)"
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "ceph": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "suricata": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "tensorrt-llm": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "OmniAdaptor": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "flash-engram": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "LMCache": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "mooncake": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "release-management": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "Security": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "sonic": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "redis-dtoe": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "monolith": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "kaot": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "Brotli4j": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "isa-l": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "KDADK-TOOLS": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "QA": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "protobuf": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "KUAF": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
     },
     "snappy": {
-      "category": "hook_declined",
-      "message": "Rejected by destination server pre-receive hook"
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "MicroservicesBench": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "cmf": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "ceph_BK": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "ocf": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "mesa": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "Kbox-patches": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "3FS": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "vmi": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "rocksdb": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
     },
     "hadoop": {
-      "category": "branch_delete",
-      "message": "Cannot delete 'rel-2.7.7-aarch64)' (current default branch on destination)"
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "cloud-native": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
     },
     "zstd": {
       "category": "clone_failed",
       "message": "Failed to clone from source (network/auth/availability issue)"
     },
+    "lz4": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
     "KAE": {
-      "category": "branch_delete",
-      "message": "Cannot delete 'master)' (current default branch on destination)"
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
     },
     "hyperscan": {
-      "category": "branch_delete",
-      "message": "Cannot delete 'aarch64)' (current default branch on destination)"
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "spdk": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "cloud-virtual": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
     },
     "boostkit-bigdata": {
-      "category": "hook_declined",
-      "message": "Rejected by destination server pre-receive hook"
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "vllm_router": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "vllm-ops": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "velox": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "Redis": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "folly": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
     },
     "infra": {
-      "category": "branch_delete",
-      "message": "Cannot delete 'main)' (current default branch on destination)"
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    ".gitcode": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "waas": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "zlib": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "sonic-cpp": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "avx2ki": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "kpglibc": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "boostcore": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "opencv": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
     },
     "anolis-cloud-kernel": {
       "category": "push_failed",
@@ -201,7 +473,7 @@
     },
     "src-openeuler-gcc": {
       "category": "large_file",
-      "message": "accelerate-libs.tar.gz is 91.97 MB, exceeds GitHub 100 MB limit"
+      "message": "gcc-12.3.0.tar.xz is 81.53 MB, exceeds GitHub 100 MB limit"
     },
     "src-openEuler-libvirt": {
       "category": "large_file",
@@ -209,7 +481,7 @@
     },
     "src-openEuler-qemu": {
       "category": "large_file",
-      "message": "qemu-4.0.1.tar.xz is 53.06 MB, exceeds GitHub 100 MB limit"
+      "message": "qemu-4.1.0.tar.xz is 51.50 MB, exceeds GitHub 100 MB limit"
     },
     "openEuler-Kernel": {
       "category": "push_failed",
@@ -228,14 +500,269 @@
       "message": "Cannot delete 'huawei)' (current default branch on destination)"
     }
   },
-  "timestamp": "2026-06-22T08:22:50Z",
+  "timestamp": "2026-06-23T06:56:24Z",
   "diagnoses": {
+    "virt-efficiency": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "CubeSandbox": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "kacc_crypto": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "OpenViking": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "Ultrascan": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "LowLatencyLib": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "daft": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "OmniSkill": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "diskann": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "OmniCatalyst": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "spring-framework": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "tomcat": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "simdjson": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "rapidjson": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "fbthrift": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "brpc": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "kadd-open": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "pandas": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "numpy": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "malloc-bench": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "skills": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "boostida": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "pvm": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
     "mysql-server": [
       "Source: API returned HTTP 400",
       "Destination: Repo is very large (3018MB) — may have timed out",
       "Cached: not found (download may have failed)"
     ],
+    "ceph": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "suricata": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "tensorrt-llm": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "OmniAdaptor": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "flash-engram": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "LMCache": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "mooncake": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "release-management": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "Security": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "sonic": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "redis-dtoe": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "monolith": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "kaot": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "Brotli4j": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "isa-l": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "KDADK-TOOLS": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "QA": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "protobuf": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "KUAF": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
     "snappy": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "MicroservicesBench": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "cmf": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "ceph_BK": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "ocf": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "mesa": [
+      "Source: API returned HTTP 400",
+      "Destination: Repo is very large (615MB) — may have timed out",
+      "Cached: not found (download may have failed)"
+    ],
+    "Kbox-patches": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "3FS": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "vmi": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "rocksdb": [
       "Source: API returned HTTP 400",
       "Destination: exists",
       "Cached: not found (download may have failed)"
@@ -245,7 +772,17 @@
       "Destination: exists",
       "Cached: not found (download may have failed)"
     ],
+    "cloud-native": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
     "zstd": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "lz4": [
       "Source: API returned HTTP 400",
       "Destination: exists",
       "Cached: not found (download may have failed)"
@@ -260,13 +797,88 @@
       "Destination: exists",
       "Cached: not found (download may have failed)"
     ],
+    "spdk": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "cloud-virtual": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
     "boostkit-bigdata": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "vllm_router": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "vllm-ops": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "velox": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "Redis": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "folly": [
       "Source: API returned HTTP 400",
       "Destination: exists",
       "Cached: not found (download may have failed)"
     ],
     "infra": [
       "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    ".gitcode": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "waas": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "zlib": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "sonic-cpp": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "avx2ki": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "kpglibc": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "boostcore": [
+      "Source: API returned HTTP 400",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "opencv": [
+      "Source: API returned HTTP 400",
       "Destination: exists",
       "Cached: not found (download may have failed)"
     ],
