@@ -209,7 +209,7 @@
     },
     "src-openEuler-qemu": {
       "category": "large_file",
-      "message": "qemu-4.1.0.tar.xz is 51.50 MB, exceeds GitHub 100 MB limit"
+      "message": "qemu-4.0.0.tar.xz is 53.05 MB, exceeds GitHub 100 MB limit"
     },
     "openEuler-Kernel": {
       "category": "push_failed",
@@ -228,7 +228,7 @@
       "message": "Cannot delete 'huawei)' (current default branch on destination)"
     }
   },
-  "timestamp": "2026-06-24T07:15:27Z",
+  "timestamp": "2026-06-25T06:54:58Z",
   "diagnoses": {
     "mysql-server": [
       "Source: API returned HTTP 400",
