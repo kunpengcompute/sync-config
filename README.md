@@ -7,25 +7,27 @@ This repository runs an automated daily workflow that mirrors repos from:
 - **gitcode/BoostKit** → **github/kunpengcompute**
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-06-25T06:54:58Z
+**Last updated:** 2026-06-26T07:04:25Z
 **Flow:** `gitcode/kunpengcompute+BoostKit` → `github/kunpengcompute`
-**Status:** ⚠️ **18 repo(s) failed**
+**Status:** ⚠️ **19 repo(s) failed**
 
 | Total | ✅ Synced | ❌ Failed | ⏭️ Skipped |
 | ---: | ---: | ---: | ---: |
-| 143 | 125 | 18 | 0 |
+| 143 | 124 | 19 | 0 |
 
 ### 📊 Failure Summary
 
 | Category | Count |
 |----------|------:|
 | 🚫 Branch Delete Refused | 8 |
-| 📤 Push Rejected | 4 |
+| 📤 Push Rejected | 5 |
 | 🔵 File Too Large (>100MB) | 3 |
 | 🔒 Pre-receive Hook Declined | 2 |
 | 📥 Clone Failed | 1 |
 
 ### ❌ Failed Repos
+
+- **`pvm`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: API returned HTTP 400<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`mysql-server`** — Cannot delete '8.0)' (current default branch on destination)<br>🔍 Source: API returned HTTP 400<br>🔍 Destination: Repo is very large (3018MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
 
@@ -49,11 +51,11 @@ This repository runs an automated daily workflow that mirrors repos from:
 
 - **`velinux-kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`src-openeuler-gcc`** — gcc-12.3.0.tar.xz is 81.53 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`src-openeuler-gcc`** — gcc-9.3.0.tar.xz is 67.27 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`src-openEuler-libvirt`** — libvirt-9.10.0.tar.xz is 134.23 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`src-openEuler-qemu`** — qemu-4.0.0.tar.xz is 53.05 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`src-openEuler-qemu`** — qemu-4.1.0.tar.xz is 51.50 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`openEuler-Kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
@@ -66,7 +68,7 @@ This repository runs an automated daily workflow that mirrors repos from:
 [🔍 View workflow logs](https://github.com/kunpengcompute/sync-config/actions)
 
 <details>
-<summary><b>✅ Synced Repos (125)</b></summary>
+<summary><b>✅ Synced Repos (124)</b></summary>
 
 - `virt-efficiency`
 - `CubeSandbox`
@@ -90,7 +92,6 @@ This repository runs an automated daily workflow that mirrors repos from:
 - `malloc-bench`
 - `skills`
 - `boostida`
-- `pvm`
 - `ceph`
 - `suricata`
 - `tensorrt-llm`
