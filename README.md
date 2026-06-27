@@ -7,13 +7,13 @@ This repository runs an automated daily workflow that mirrors repos from:
 - **gitcode/BoostKit** → **github/kunpengcompute**
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-06-26T07:04:25Z
+**Last updated:** 2026-06-27T06:29:46Z
 **Flow:** `gitcode/kunpengcompute+BoostKit` → `github/kunpengcompute`
 **Status:** ⚠️ **19 repo(s) failed**
 
 | Total | ✅ Synced | ❌ Failed | ⏭️ Skipped |
 | ---: | ---: | ---: | ---: |
-| 143 | 124 | 19 | 0 |
+| 145 | 126 | 19 | 0 |
 
 ### 📊 Failure Summary
 
@@ -51,7 +51,7 @@ This repository runs an automated daily workflow that mirrors repos from:
 
 - **`velinux-kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`src-openeuler-gcc`** — gcc-9.3.0.tar.xz is 67.27 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`src-openeuler-gcc`** — accelerate-libs.tar.gz is 91.97 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`src-openEuler-libvirt`** — libvirt-9.10.0.tar.xz is 134.23 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
@@ -68,7 +68,7 @@ This repository runs an automated daily workflow that mirrors repos from:
 [🔍 View workflow logs](https://github.com/kunpengcompute/sync-config/actions)
 
 <details>
-<summary><b>✅ Synced Repos (124)</b></summary>
+<summary><b>✅ Synced Repos (126)</b></summary>
 
 - `virt-efficiency`
 - `CubeSandbox`
@@ -162,6 +162,8 @@ This repository runs an automated daily workflow that mirrors repos from:
 - `tensorflow-serving`
 - `tensorflow`
 - `community`
+- `hpckit-testsuite`
+- `hpckit-packtool`
 - `HPC-competitions`
 - `src-openEuler-ubturbo`
 - `src-openEuler-ub-pkg-manager`
