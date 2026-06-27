@@ -2,8 +2,8 @@
   "src": "gitcode/kunpengcompute+BoostKit",
   "dst": "github/kunpengcompute",
   "workflow": "repo-mirror",
-  "total": 143,
-  "success": 124,
+  "total": 145,
+  "success": 126,
   "failed": 19,
   "skipped": 0,
   "success_list": [
@@ -99,6 +99,8 @@
     "tensorflow-serving",
     "tensorflow",
     "community",
+    "hpckit-testsuite",
+    "hpckit-packtool",
     "HPC-competitions",
     "src-openEuler-ubturbo",
     "src-openEuler-ub-pkg-manager",
@@ -205,7 +207,7 @@
     },
     "src-openeuler-gcc": {
       "category": "large_file",
-      "message": "gcc-9.3.0.tar.xz is 67.27 MB, exceeds GitHub 100 MB limit"
+      "message": "accelerate-libs.tar.gz is 91.97 MB, exceeds GitHub 100 MB limit"
     },
     "src-openEuler-libvirt": {
       "category": "large_file",
@@ -232,7 +234,7 @@
       "message": "Cannot delete 'huawei)' (current default branch on destination)"
     }
   },
-  "timestamp": "2026-06-26T07:04:25Z",
+  "timestamp": "2026-06-27T06:29:46Z",
   "diagnoses": {
     "pvm": [
       "Source: API returned HTTP 400",
