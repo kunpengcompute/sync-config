@@ -7,7 +7,7 @@ This repository runs an automated daily workflow that mirrors repos from:
 - **gitcode/BoostKit** → **github/kunpengcompute**
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-06-29T07:29:04Z
+**Last updated:** 2026-06-30T06:58:21Z
 **Flow:** `gitcode/kunpengcompute+BoostKit` → `github/kunpengcompute`
 **Status:** ⚠️ **19 repo(s) failed**
 
@@ -27,21 +27,21 @@ This repository runs an automated daily workflow that mirrors repos from:
 
 ### ❌ Failed Repos
 
-- **`pvm`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: API returned HTTP 400<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`pvm`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`mysql-server`** — Cannot delete '8.0)' (current default branch on destination)<br>🔍 Source: API returned HTTP 400<br>🔍 Destination: Repo is very large (3018MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
+- **`mysql-server`** — Cannot delete '8.0)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: Repo is very large (3018MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
 
-- **`snappy`** — Rejected by destination server pre-receive hook<br>🔍 Source: API returned HTTP 400<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`snappy`** — Rejected by destination server pre-receive hook<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`hadoop`** — Cannot delete 'rel-2.7.7-aarch64)' (current default branch on destination)<br>🔍 Source: API returned HTTP 400<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`hadoop`** — Cannot delete 'rel-2.7.7-aarch64)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`zstd`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: API returned HTTP 400<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`zstd`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`KAE`** — Cannot delete 'master)' (current default branch on destination)<br>🔍 Source: API returned HTTP 400<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`KAE`** — Cannot delete 'master)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`hyperscan`** — Cannot delete 'aarch64)' (current default branch on destination)<br>🔍 Source: API returned HTTP 400<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`hyperscan`** — Cannot delete 'aarch64)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`boostkit-bigdata`** — Rejected by destination server pre-receive hook<br>🔍 Source: API returned HTTP 400<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`boostkit-bigdata`** — Rejected by destination server pre-receive hook<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`infra`** — Cannot delete 'main)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
@@ -51,11 +51,11 @@ This repository runs an automated daily workflow that mirrors repos from:
 
 - **`velinux-kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`src-openeuler-gcc`** — accelerate-libs.tar.gz is 91.97 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`src-openeuler-gcc`** — gcc-12.3.0.tar.xz is 81.53 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`src-openEuler-libvirt`** — libvirt-9.10.0.tar.xz is 134.23 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`src-openEuler-qemu`** — qemu-5.0.0.tar.xz is 59.53 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`src-openEuler-qemu`** — qemu-4.0.0.tar.xz is 53.05 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`openEuler-Kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
