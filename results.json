@@ -207,7 +207,7 @@
     },
     "src-openeuler-gcc": {
       "category": "large_file",
-      "message": "accelerate-libs.tar.gz is 91.97 MB, exceeds GitHub 100 MB limit"
+      "message": "gcc-12.3.0.tar.xz is 81.53 MB, exceeds GitHub 100 MB limit"
     },
     "src-openEuler-libvirt": {
       "category": "large_file",
@@ -215,7 +215,7 @@
     },
     "src-openEuler-qemu": {
       "category": "large_file",
-      "message": "qemu-5.0.0.tar.xz is 59.53 MB, exceeds GitHub 100 MB limit"
+      "message": "qemu-4.0.0.tar.xz is 53.05 MB, exceeds GitHub 100 MB limit"
     },
     "openEuler-Kernel": {
       "category": "push_failed",
@@ -234,45 +234,45 @@
       "message": "Cannot delete 'huawei)' (current default branch on destination)"
     }
   },
-  "timestamp": "2026-06-29T07:29:04Z",
+  "timestamp": "2026-06-30T06:58:21Z",
   "diagnoses": {
     "pvm": [
-      "Source: API returned HTTP 400",
+      "Source: Source repo not found or not accessible with current token",
       "Destination: exists",
       "Cached: not found (download may have failed)"
     ],
     "mysql-server": [
-      "Source: API returned HTTP 400",
+      "Source: Source repo not found or not accessible with current token",
       "Destination: Repo is very large (3018MB) — may have timed out",
       "Cached: not found (download may have failed)"
     ],
     "snappy": [
-      "Source: API returned HTTP 400",
+      "Source: Source repo not found or not accessible with current token",
       "Destination: exists",
       "Cached: not found (download may have failed)"
     ],
     "hadoop": [
-      "Source: API returned HTTP 400",
+      "Source: Source repo not found or not accessible with current token",
       "Destination: exists",
       "Cached: not found (download may have failed)"
     ],
     "zstd": [
-      "Source: API returned HTTP 400",
+      "Source: Source repo not found or not accessible with current token",
       "Destination: exists",
       "Cached: not found (download may have failed)"
     ],
     "KAE": [
-      "Source: API returned HTTP 400",
+      "Source: Source repo not found or not accessible with current token",
       "Destination: exists",
       "Cached: not found (download may have failed)"
     ],
     "hyperscan": [
-      "Source: API returned HTTP 400",
+      "Source: Source repo not found or not accessible with current token",
       "Destination: exists",
       "Cached: not found (download may have failed)"
     ],
     "boostkit-bigdata": [
-      "Source: API returned HTTP 400",
+      "Source: Source repo not found or not accessible with current token",
       "Destination: exists",
       "Cached: not found (download may have failed)"
     ],
