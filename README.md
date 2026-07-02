@@ -7,19 +7,19 @@ This repository runs an automated daily workflow that mirrors repos from:
 - **gitcode/BoostKit** → **github/kunpengcompute**
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-07-01T07:27:04Z
+**Last updated:** 2026-07-02T06:50:30Z
 **Flow:** `gitcode/kunpengcompute+BoostKit` → `github/kunpengcompute`
-**Status:** ⚠️ **19 repo(s) failed**
+**Status:** ⚠️ **20 repo(s) failed**
 
 | Total | ✅ Synced | ❌ Failed | ⏭️ Skipped |
 | ---: | ---: | ---: | ---: |
-| 145 | 126 | 19 | 0 |
+| 146 | 126 | 20 | 0 |
 
 ### 📊 Failure Summary
 
 | Category | Count |
 |----------|------:|
-| 🚫 Branch Delete Refused | 8 |
+| 🚫 Branch Delete Refused | 9 |
 | 📤 Push Rejected | 5 |
 | 🔵 File Too Large (>100MB) | 3 |
 | 🔒 Pre-receive Hook Declined | 2 |
@@ -27,43 +27,45 @@ This repository runs an automated daily workflow that mirrors repos from:
 
 ### ❌ Failed Repos
 
-- **`pvm`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`Ultrascan`** — Cannot delete 'dev)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`mysql-server`** — Cannot delete '8.0)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: Repo is very large (3018MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
+- **`pvm`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`snappy`** — Rejected by destination server pre-receive hook<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`mysql-server`** — Cannot delete '8.0)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`hadoop`** — Cannot delete 'rel-2.7.7-aarch64)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`snappy`** — Rejected by destination server pre-receive hook<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`zstd`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`hadoop`** — Cannot delete 'rel-2.7.7-aarch64)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`KAE`** — Cannot delete 'master)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`zstd`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`hyperscan`** — Cannot delete 'aarch64)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`KAE`** — Cannot delete 'master)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`boostkit-bigdata`** — Rejected by destination server pre-receive hook<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`hyperscan`** — Cannot delete 'aarch64)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`infra`** — Cannot delete 'main)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`boostkit-bigdata`** — Rejected by destination server pre-receive hook<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`anolis-cloud-kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`infra`** — Cannot delete 'main)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`velinux-kernel-dev`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`anolis-cloud-kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`velinux-kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`velinux-kernel-dev`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`src-openeuler-gcc`** — gcc-12.3.0.tar.xz is 81.53 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`velinux-kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`src-openEuler-libvirt`** — libvirt-9.10.0.tar.xz is 134.23 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`src-openeuler-gcc`** — gcc-12.3.0.tar.xz is 81.53 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`src-openEuler-qemu`** — qemu-4.0.0.tar.xz is 53.05 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`src-openEuler-libvirt`** — libvirt-9.10.0.tar.xz is 134.23 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`openEuler-Kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`src-openEuler-qemu`** — qemu-5.0.0.tar.xz is 59.53 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`hucx`** — Cannot delete 'huawei)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`openEuler-Kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`xucg`** — Cannot delete 'huawei)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`hucx`** — Cannot delete 'huawei)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`hmpi`** — Cannot delete 'huawei)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`xucg`** — Cannot delete 'huawei)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
+
+- **`hmpi`** — Cannot delete 'huawei)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
 [🔍 View workflow logs](https://github.com/kunpengcompute/sync-config/actions)
 
@@ -74,7 +76,6 @@ This repository runs an automated daily workflow that mirrors repos from:
 - `CubeSandbox`
 - `kacc_crypto`
 - `OpenViking`
-- `Ultrascan`
 - `LowLatencyLib`
 - `daft`
 - `OmniSkill`
@@ -162,6 +163,7 @@ This repository runs an automated daily workflow that mirrors repos from:
 - `tensorflow-serving`
 - `tensorflow`
 - `community`
+- `src-elasticMem`
 - `hpckit-testsuite`
 - `hpckit-packtool`
 - `HPC-competitions`
