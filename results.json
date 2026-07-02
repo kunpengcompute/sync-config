@@ -2,16 +2,15 @@
   "src": "gitcode/kunpengcompute+BoostKit",
   "dst": "github/kunpengcompute",
   "workflow": "repo-mirror",
-  "total": 145,
+  "total": 146,
   "success": 126,
-  "failed": 19,
+  "failed": 20,
   "skipped": 0,
   "success_list": [
     "virt-efficiency",
     "CubeSandbox",
     "kacc_crypto",
     "OpenViking",
-    "Ultrascan",
     "LowLatencyLib",
     "daft",
     "OmniSkill",
@@ -99,6 +98,7 @@
     "tensorflow-serving",
     "tensorflow",
     "community",
+    "src-elasticMem",
     "hpckit-testsuite",
     "hpckit-packtool",
     "HPC-competitions",
@@ -135,6 +135,7 @@
     "src-openEuler-Kernel"
   ],
   "failed_list": [
+    "Ultrascan",
     "pvm",
     "mysql-server",
     "snappy",
@@ -157,6 +158,10 @@
   ],
   "skipped_list": [],
   "errors": {
+    "Ultrascan": {
+      "category": "branch_delete",
+      "message": "Cannot delete 'dev)' (current default branch on destination)"
+    },
     "pvm": {
       "category": "push_failed",
       "message": "remote: fatal: pack exceeds maximum allowed size (2.00 GiB)"
@@ -215,7 +220,7 @@
     },
     "src-openEuler-qemu": {
       "category": "large_file",
-      "message": "qemu-4.0.0.tar.xz is 53.05 MB, exceeds GitHub 100 MB limit"
+      "message": "qemu-5.0.0.tar.xz is 59.53 MB, exceeds GitHub 100 MB limit"
     },
     "openEuler-Kernel": {
       "category": "push_failed",
@@ -234,101 +239,106 @@
       "message": "Cannot delete 'huawei)' (current default branch on destination)"
     }
   },
-  "timestamp": "2026-07-01T07:27:04Z",
+  "timestamp": "2026-07-02T06:50:30Z",
   "diagnoses": {
+    "Ultrascan": [
+      "Source: Source repo not found or not accessible with current token",
+      "Destination: API rate limit exceeded",
+      "Cached: not found (download may have failed)"
+    ],
     "pvm": [
       "Source: Source repo not found or not accessible with current token",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "mysql-server": [
       "Source: Source repo not found or not accessible with current token",
-      "Destination: Repo is very large (3018MB) — may have timed out",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "snappy": [
       "Source: Source repo not found or not accessible with current token",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "hadoop": [
       "Source: Source repo not found or not accessible with current token",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "zstd": [
       "Source: Source repo not found or not accessible with current token",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "KAE": [
       "Source: Source repo not found or not accessible with current token",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "hyperscan": [
       "Source: Source repo not found or not accessible with current token",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "boostkit-bigdata": [
       "Source: Source repo not found or not accessible with current token",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "infra": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "anolis-cloud-kernel": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "velinux-kernel-dev": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "velinux-kernel": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "src-openeuler-gcc": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "src-openEuler-libvirt": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "src-openEuler-qemu": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "openEuler-Kernel": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "hucx": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "xucg": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
     "hmpi": [
       "Source: accessible",
-      "Destination: exists",
+      "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ]
   }
