@@ -2,11 +2,12 @@
   "src": "gitcode/kunpengcompute+BoostKit",
   "dst": "github/kunpengcompute",
   "workflow": "repo-mirror",
-  "total": 146,
-  "success": 126,
-  "failed": 20,
+  "total": 147,
+  "success": 125,
+  "failed": 22,
   "skipped": 0,
   "success_list": [
+    "gd-hnsw",
     "virt-efficiency",
     "CubeSandbox",
     "kacc_crypto",
@@ -91,12 +92,10 @@
     "omnioperator",
     "omniruntime",
     "knewpfordelta",
-    "boostsra",
     "kvecturbo",
     "faiss",
     "hnswlib",
     "tensorflow-serving",
-    "tensorflow",
     "community",
     "src-elasticMem",
     "hpckit-testsuite",
@@ -145,6 +144,8 @@
     "hyperscan",
     "boostkit-bigdata",
     "infra",
+    "boostsra",
+    "tensorflow",
     "anolis-cloud-kernel",
     "velinux-kernel-dev",
     "velinux-kernel",
@@ -198,6 +199,14 @@
       "category": "branch_delete",
       "message": "Cannot delete 'main)' (current default branch on destination)"
     },
+    "boostsra": {
+      "category": "branch_delete",
+      "message": "Cannot delete 'dev_for_doc_630)' (current default branch on destination)"
+    },
+    "tensorflow": {
+      "category": "branch_delete",
+      "message": "Cannot delete 'dev_for_doc_630)' (current default branch on destination)"
+    },
     "anolis-cloud-kernel": {
       "category": "push_failed",
       "message": "remote: fatal: pack exceeds maximum allowed size (2.00 GiB)"
@@ -220,7 +229,7 @@
     },
     "src-openEuler-qemu": {
       "category": "large_file",
-      "message": "qemu-5.0.0.tar.xz is 59.53 MB, exceeds GitHub 100 MB limit"
+      "message": "qemu-4.1.0.tar.xz is 51.50 MB, exceeds GitHub 100 MB limit"
     },
     "openEuler-Kernel": {
       "category": "push_failed",
@@ -239,7 +248,7 @@
       "message": "Cannot delete 'huawei)' (current default branch on destination)"
     }
   },
-  "timestamp": "2026-07-02T06:50:30Z",
+  "timestamp": "2026-07-03T06:29:55Z",
   "diagnoses": {
     "Ultrascan": [
       "Source: Source repo not found or not accessible with current token",
@@ -288,6 +297,16 @@
     ],
     "infra": [
       "Source: accessible",
+      "Destination: API rate limit exceeded",
+      "Cached: not found (download may have failed)"
+    ],
+    "boostsra": [
+      "Source: Source repo not found or not accessible with current token",
+      "Destination: API rate limit exceeded",
+      "Cached: not found (download may have failed)"
+    ],
+    "tensorflow": [
+      "Source: Source repo not found or not accessible with current token",
       "Destination: API rate limit exceeded",
       "Cached: not found (download may have failed)"
     ],
