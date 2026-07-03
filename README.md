@@ -7,19 +7,19 @@ This repository runs an automated daily workflow that mirrors repos from:
 - **gitcode/BoostKit** → **github/kunpengcompute**
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-07-02T06:50:30Z
+**Last updated:** 2026-07-03T06:29:55Z
 **Flow:** `gitcode/kunpengcompute+BoostKit` → `github/kunpengcompute`
-**Status:** ⚠️ **20 repo(s) failed**
+**Status:** ⚠️ **22 repo(s) failed**
 
 | Total | ✅ Synced | ❌ Failed | ⏭️ Skipped |
 | ---: | ---: | ---: | ---: |
-| 146 | 126 | 20 | 0 |
+| 147 | 125 | 22 | 0 |
 
 ### 📊 Failure Summary
 
 | Category | Count |
 |----------|------:|
-| 🚫 Branch Delete Refused | 9 |
+| 🚫 Branch Delete Refused | 11 |
 | 📤 Push Rejected | 5 |
 | 🔵 File Too Large (>100MB) | 3 |
 | 🔒 Pre-receive Hook Declined | 2 |
@@ -47,6 +47,10 @@ This repository runs an automated daily workflow that mirrors repos from:
 
 - **`infra`** — Cannot delete 'main)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
+- **`boostsra`** — Cannot delete 'dev_for_doc_630)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
+
+- **`tensorflow`** — Cannot delete 'dev_for_doc_630)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
+
 - **`anolis-cloud-kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
 - **`velinux-kernel-dev`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
@@ -57,7 +61,7 @@ This repository runs an automated daily workflow that mirrors repos from:
 
 - **`src-openEuler-libvirt`** — libvirt-9.10.0.tar.xz is 134.23 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`src-openEuler-qemu`** — qemu-5.0.0.tar.xz is 59.53 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
+- **`src-openEuler-qemu`** — qemu-4.1.0.tar.xz is 51.50 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
 - **`openEuler-Kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
@@ -70,8 +74,9 @@ This repository runs an automated daily workflow that mirrors repos from:
 [🔍 View workflow logs](https://github.com/kunpengcompute/sync-config/actions)
 
 <details>
-<summary><b>✅ Synced Repos (126)</b></summary>
+<summary><b>✅ Synced Repos (125)</b></summary>
 
+- `gd-hnsw`
 - `virt-efficiency`
 - `CubeSandbox`
 - `kacc_crypto`
@@ -156,12 +161,10 @@ This repository runs an automated daily workflow that mirrors repos from:
 - `omnioperator`
 - `omniruntime`
 - `knewpfordelta`
-- `boostsra`
 - `kvecturbo`
 - `faiss`
 - `hnswlib`
 - `tensorflow-serving`
-- `tensorflow`
 - `community`
 - `src-elasticMem`
 - `hpckit-testsuite`
