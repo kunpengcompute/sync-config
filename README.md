@@ -7,13 +7,13 @@ This repository runs an automated daily workflow that mirrors repos from:
 - **gitcode/BoostKit** → **github/kunpengcompute**
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-07-03T06:29:55Z
+**Last updated:** 2026-07-04T06:29:08Z
 **Flow:** `gitcode/kunpengcompute+BoostKit` → `github/kunpengcompute`
 **Status:** ⚠️ **22 repo(s) failed**
 
 | Total | ✅ Synced | ❌ Failed | ⏭️ Skipped |
 | ---: | ---: | ---: | ---: |
-| 147 | 125 | 22 | 0 |
+| 150 | 128 | 22 | 0 |
 
 ### 📊 Failure Summary
 
@@ -63,18 +63,18 @@ This repository runs an automated daily workflow that mirrors repos from:
 
 - **`src-openEuler-qemu`** — qemu-4.1.0.tar.xz is 51.50 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
 
-- **`openEuler-Kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
+- **`openEuler-Kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`hucx`** — Cannot delete 'huawei)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
+- **`hucx`** — Cannot delete 'huawei)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: API returned HTTP 502<br>🔍 Cached: not found (download may have failed)
 
-- **`xucg`** — Cannot delete 'huawei)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
+- **`xucg`** — Cannot delete 'huawei)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`hmpi`** — Cannot delete 'huawei)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: API rate limit exceeded<br>🔍 Cached: not found (download may have failed)
+- **`hmpi`** — Cannot delete 'huawei)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 [🔍 View workflow logs](https://github.com/kunpengcompute/sync-config/actions)
 
 <details>
-<summary><b>✅ Synced Repos (125)</b></summary>
+<summary><b>✅ Synced Repos (128)</b></summary>
 
 - `gd-hnsw`
 - `virt-efficiency`
@@ -166,6 +166,9 @@ This repository runs an automated daily workflow that mirrors repos from:
 - `hnswlib`
 - `tensorflow-serving`
 - `community`
+- `ub-dkms-build`
+- `ub-os-component-dkms`
+- `ub-buildin-patch`
 - `src-elasticMem`
 - `hpckit-testsuite`
 - `hpckit-packtool`
