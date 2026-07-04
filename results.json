@@ -2,8 +2,8 @@
   "src": "gitcode/kunpengcompute+BoostKit",
   "dst": "github/kunpengcompute",
   "workflow": "repo-mirror",
-  "total": 147,
-  "success": 125,
+  "total": 150,
+  "success": 128,
   "failed": 22,
   "skipped": 0,
   "success_list": [
@@ -97,6 +97,9 @@
     "hnswlib",
     "tensorflow-serving",
     "community",
+    "ub-dkms-build",
+    "ub-os-component-dkms",
+    "ub-buildin-patch",
     "src-elasticMem",
     "hpckit-testsuite",
     "hpckit-packtool",
@@ -248,7 +251,7 @@
       "message": "Cannot delete 'huawei)' (current default branch on destination)"
     }
   },
-  "timestamp": "2026-07-03T06:29:55Z",
+  "timestamp": "2026-07-04T06:29:08Z",
   "diagnoses": {
     "Ultrascan": [
       "Source: Source repo not found or not accessible with current token",
@@ -342,22 +345,22 @@
     ],
     "openEuler-Kernel": [
       "Source: accessible",
-      "Destination: API rate limit exceeded",
+      "Destination: exists",
       "Cached: not found (download may have failed)"
     ],
     "hucx": [
       "Source: accessible",
-      "Destination: API rate limit exceeded",
+      "Destination: API returned HTTP 502",
       "Cached: not found (download may have failed)"
     ],
     "xucg": [
       "Source: accessible",
-      "Destination: API rate limit exceeded",
+      "Destination: exists",
       "Cached: not found (download may have failed)"
     ],
     "hmpi": [
       "Source: accessible",
-      "Destination: API rate limit exceeded",
+      "Destination: exists",
       "Cached: not found (download may have failed)"
     ]
   }
