@@ -224,7 +224,7 @@
     },
     "src-openeuler-gcc": {
       "category": "large_file",
-      "message": "gcc-9.3.0.tar.xz is 67.27 MB, exceeds GitHub 100 MB limit"
+      "message": "accelerate-libs.tar.gz is 91.97 MB, exceeds GitHub 100 MB limit"
     },
     "src-openEuler-libvirt": {
       "category": "large_file",
@@ -232,7 +232,7 @@
     },
     "src-openEuler-qemu": {
       "category": "large_file",
-      "message": "qemu-5.0.0.tar.xz is 59.53 MB, exceeds GitHub 100 MB limit"
+      "message": "qemu-4.0.1.tar.xz is 53.06 MB, exceeds GitHub 100 MB limit"
     },
     "openEuler-Kernel": {
       "category": "push_failed",
@@ -251,7 +251,7 @@
       "message": "Cannot delete 'huawei)' (current default branch on destination)"
     }
   },
-  "timestamp": "2026-07-06T07:03:37Z",
+  "timestamp": "2026-07-07T07:03:44Z",
   "diagnoses": {
     "Ultrascan": [
       "Source: Source repo not found or not accessible with current token",
