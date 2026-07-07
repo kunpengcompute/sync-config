@@ -7,7 +7,7 @@ This repository runs an automated daily workflow that mirrors repos from:
 - **gitcode/BoostKit** → **github/kunpengcompute**
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-07-06T07:03:37Z
+**Last updated:** 2026-07-07T07:03:44Z
 **Flow:** `gitcode/kunpengcompute+BoostKit` → `github/kunpengcompute`
 **Status:** ⚠️ **22 repo(s) failed**
 
@@ -57,11 +57,11 @@ This repository runs an automated daily workflow that mirrors repos from:
 
 - **`velinux-kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`src-openeuler-gcc`** — gcc-9.3.0.tar.xz is 67.27 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`src-openeuler-gcc`** — accelerate-libs.tar.gz is 91.97 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`src-openEuler-libvirt`** — libvirt-9.10.0.tar.xz is 134.23 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`src-openEuler-qemu`** — qemu-5.0.0.tar.xz is 59.53 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`src-openEuler-qemu`** — qemu-4.0.1.tar.xz is 53.06 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`openEuler-Kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
