@@ -3,8 +3,8 @@
   "dst": "github/kunpengcompute",
   "workflow": "repo-mirror",
   "total": 150,
-  "success": 128,
-  "failed": 22,
+  "success": 125,
+  "failed": 25,
   "skipped": 0,
   "success_list": [
     "gd-hnsw",
@@ -128,9 +128,6 @@
     "openEuler-qemu",
     "src-openEuler-ubctl",
     "src-openEuler-ubutils",
-    "src-openEuler-cdma",
-    "src-openEuler-memlink",
-    "src-openEuler-ummu",
     "src-openEuler-umdk",
     "src-openEuler-sysSentry",
     "src-openEuler-obmm",
@@ -153,6 +150,9 @@
     "velinux-kernel-dev",
     "velinux-kernel",
     "src-openeuler-gcc",
+    "src-openEuler-libcdma",
+    "src-openEuler-memlinkd",
+    "src-openEuler-libummu",
     "src-openEuler-libvirt",
     "src-openEuler-qemu",
     "openEuler-Kernel",
@@ -226,6 +226,18 @@
       "category": "large_file",
       "message": "accelerate-libs.tar.gz is 91.97 MB, exceeds GitHub 100 MB limit"
     },
+    "src-openEuler-libcdma": {
+      "category": "repo_not_found",
+      "message": "Source repository not found or has been deleted"
+    },
+    "src-openEuler-memlinkd": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "src-openEuler-libummu": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
     "src-openEuler-libvirt": {
       "category": "large_file",
       "message": "libvirt-9.10.0.tar.xz is 134.23 MB, exceeds GitHub 100 MB limit"
@@ -251,7 +263,7 @@
       "message": "Cannot delete 'huawei)' (current default branch on destination)"
     }
   },
-  "timestamp": "2026-07-07T07:03:44Z",
+  "timestamp": "2026-07-08T06:18:09Z",
   "diagnoses": {
     "Ultrascan": [
       "Source: Source repo not found or not accessible with current token",
@@ -331,6 +343,21 @@
     "src-openeuler-gcc": [
       "Source: accessible",
       "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "src-openEuler-libcdma": [
+      "Source: accessible",
+      "Destination: Source repo not found or not accessible with current token",
+      "Cached: not found (download may have failed)"
+    ],
+    "src-openEuler-memlinkd": [
+      "Source: Source repo not found or not accessible with current token",
+      "Destination: Source repo not found or not accessible with current token",
+      "Cached: not found (download may have failed)"
+    ],
+    "src-openEuler-libummu": [
+      "Source: Source repo not found or not accessible with current token",
+      "Destination: Source repo not found or not accessible with current token",
       "Cached: not found (download may have failed)"
     ],
     "src-openEuler-libvirt": [
