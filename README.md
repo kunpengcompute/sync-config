@@ -7,13 +7,13 @@ This repository runs an automated daily workflow that mirrors repos from:
 - **gitcode/BoostKit** → **github/kunpengcompute**
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-07-08T06:18:09Z
+**Last updated:** 2026-07-09T06:58:13Z
 **Flow:** `gitcode/kunpengcompute+BoostKit` → `github/kunpengcompute`
-**Status:** ⚠️ **25 repo(s) failed**
+**Status:** ⚠️ **24 repo(s) failed**
 
 | Total | ✅ Synced | ❌ Failed | ⏭️ Skipped |
 | ---: | ---: | ---: | ---: |
-| 150 | 125 | 25 | 0 |
+| 151 | 127 | 24 | 0 |
 
 ### 📊 Failure Summary
 
@@ -24,7 +24,6 @@ This repository runs an automated daily workflow that mirrors repos from:
 | 📥 Clone Failed | 3 |
 | 🔵 File Too Large (>100MB) | 3 |
 | 🔒 Pre-receive Hook Declined | 2 |
-| ❓ Source Repo Not Found | 1 |
 
 ### ❌ Failed Repos
 
@@ -58,9 +57,7 @@ This repository runs an automated daily workflow that mirrors repos from:
 
 - **`velinux-kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`src-openeuler-gcc`** — accelerate-libs.tar.gz is 91.97 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
-
-- **`src-openEuler-libcdma`** — Source repository not found or has been deleted<br>🔍 Source: accessible<br>🔍 Destination: Source repo not found or not accessible with current token<br>🔍 Cached: not found (download may have failed)
+- **`src-openeuler-gcc`** — gcc-12.3.0.tar.xz is 81.53 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`src-openEuler-memlinkd`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: Source repo not found or not accessible with current token<br>🔍 Cached: not found (download may have failed)
 
@@ -68,7 +65,7 @@ This repository runs an automated daily workflow that mirrors repos from:
 
 - **`src-openEuler-libvirt`** — libvirt-9.10.0.tar.xz is 134.23 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`src-openEuler-qemu`** — qemu-4.0.1.tar.xz is 53.06 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`src-openEuler-qemu`** — qemu-4.1.0.tar.xz is 51.50 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`openEuler-Kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
@@ -81,8 +78,9 @@ This repository runs an automated daily workflow that mirrors repos from:
 [🔍 View workflow logs](https://github.com/kunpengcompute/sync-config/actions)
 
 <details>
-<summary><b>✅ Synced Repos (125)</b></summary>
+<summary><b>✅ Synced Repos (127)</b></summary>
 
+- `KVcache_lossless_compression`
 - `gd-hnsw`
 - `virt-efficiency`
 - `CubeSandbox`
@@ -204,6 +202,7 @@ This repository runs an automated daily workflow that mirrors repos from:
 - `openEuler-qemu`
 - `src-openEuler-ubctl`
 - `src-openEuler-ubutils`
+- `src-openEuler-libcdma`
 - `src-openEuler-umdk`
 - `src-openEuler-sysSentry`
 - `src-openEuler-obmm`
