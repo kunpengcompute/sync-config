@@ -237,7 +237,7 @@
     },
     "src-openEuler-libvirt": {
       "category": "large_file",
-      "message": "libvirt-9.10.0.tar.xz is 131.14 MB, exceeds GitHub 100 MB limit"
+      "message": "libvirt-9.10.0.tar.xz is 134.23 MB, exceeds GitHub 100 MB limit"
     },
     "src-openEuler-qemu": {
       "category": "large_file",
@@ -260,7 +260,7 @@
       "message": "Cannot delete 'huawei)' (current default branch on destination)"
     }
   },
-  "timestamp": "2026-07-10T06:58:59Z",
+  "timestamp": "2026-07-11T06:12:38Z",
   "diagnoses": {
     "Ultrascan": [
       "Source: Source repo not found or not accessible with current token",
