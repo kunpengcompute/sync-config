@@ -225,7 +225,7 @@
     },
     "src-openeuler-gcc": {
       "category": "large_file",
-      "message": "gcc-9.3.0.tar.xz is 67.27 MB, exceeds GitHub 100 MB limit"
+      "message": "gcc-12.3.0.tar.xz is 81.53 MB, exceeds GitHub 100 MB limit"
     },
     "src-openEuler-memlinkd": {
       "category": "clone_failed",
@@ -260,7 +260,7 @@
       "message": "Cannot delete 'huawei)' (current default branch on destination)"
     }
   },
-  "timestamp": "2026-07-12T06:51:51Z",
+  "timestamp": "2026-07-13T06:34:19Z",
   "diagnoses": {
     "Ultrascan": [
       "Source: Source repo not found or not accessible with current token",
