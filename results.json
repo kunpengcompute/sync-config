@@ -1,0 +1,386 @@
+{
+  "src": "gitcode/kunpengcompute+BoostKit",
+  "dst": "github/kunpengcompute",
+  "workflow": "repo-mirror",
+  "total": 151,
+  "success": 127,
+  "failed": 24,
+  "skipped": 0,
+  "success_list": [
+    "KVcache_lossless_compression",
+    "gd-hnsw",
+    "virt-efficiency",
+    "CubeSandbox",
+    "kacc_crypto",
+    "OpenViking",
+    "LowLatencyLib",
+    "daft",
+    "OmniSkill",
+    "diskann",
+    "OmniCatalyst",
+    "spring-framework",
+    "tomcat",
+    "simdjson",
+    "rapidjson",
+    "fbthrift",
+    "brpc",
+    "kadd-open",
+    "pandas",
+    "numpy",
+    "malloc-bench",
+    "skills",
+    "boostida",
+    "ceph",
+    "suricata",
+    "tensorrt-llm",
+    "OmniAdaptor",
+    "flash-engram",
+    "LMCache",
+    "mooncake",
+    "release-management",
+    "Security",
+    "SegmentCache",
+    "sonic",
+    "redis-dtoe",
+    "reedsolomon",
+    "rabitq",
+    "monolith",
+    "kaot",
+    "Brotli4j",
+    "isa-l",
+    "KDADK-TOOLS",
+    "QA",
+    "protobuf",
+    "KUAF",
+    "MicroservicesBench",
+    "cmf",
+    "ceph_BK",
+    "ocf",
+    "mesa",
+    "Kbox-patches",
+    "3FS",
+    "vmi",
+    "rocksdb",
+    "cloud-native",
+    "lz4",
+    "spdk",
+    "cloud-virtual",
+    "vllm_router",
+    "vllm-ops",
+    "velox",
+    "boostkit-agreements",
+    "Redis",
+    "folly",
+    ".gitcode",
+    "waas",
+    "zlib",
+    "sonic-cpp",
+    "avx2ki",
+    "kpglibc",
+    "boostcore",
+    "opencv",
+    "ffmpeg",
+    "libavif",
+    "libwebp",
+    "boostmedia",
+    "boostcph",
+    "boostvirt",
+    "milvus",
+    "boostdb",
+    "boostsds",
+    "omnistatestore",
+    "omnistream",
+    "omnioperator",
+    "omniruntime",
+    "knewpfordelta",
+    "kvecturbo",
+    "faiss",
+    "hnswlib",
+    "tensorflow-serving",
+    "community",
+    "ub-dkms-build",
+    "ub-os-component-dkms",
+    "ub-buildin-patch",
+    "src-elasticMem",
+    "hpckit-testsuite",
+    "hpckit-packtool",
+    "HPC-competitions",
+    "src-openEuler-ubturbo",
+    "src-openEuler-ub-pkg-manager",
+    "sglang",
+    "src-openEuler-ubs-comm",
+    "src-openEuler-ubs-mem",
+    "src-openEuler-ubs-io",
+    "src-openEuler-ubs-virt",
+    "src-openEuler-ubs-engine",
+    "DeepSeek-V3-Sample",
+    "hpckit-sample",
+    "Infra",
+    "src-openEuler-libvirt-python",
+    "kunpeng-extension-for-pytorch",
+    "kupl",
+    "kutacc",
+    "kuqcd",
+    "kudnn",
+    "bytedance-hikptool",
+    ".atomgit",
+    "HPCKit-Community",
+    "openEuler-libvirt",
+    "openEuler-qemu",
+    "src-openEuler-ubctl",
+    "src-openEuler-ubutils",
+    "src-openEuler-libcdma",
+    "src-openEuler-umdk",
+    "src-openEuler-sysSentry",
+    "src-openEuler-obmm",
+    "src-openEuler-Kernel"
+  ],
+  "failed_list": [
+    "Ultrascan",
+    "pvm",
+    "mysql-server",
+    "snappy",
+    "hadoop",
+    "zstd",
+    "KAE",
+    "hyperscan",
+    "boostkit-bigdata",
+    "infra",
+    "boostsra",
+    "tensorflow",
+    "anolis-cloud-kernel",
+    "velinux-kernel-dev",
+    "velinux-kernel",
+    "src-openeuler-gcc",
+    "src-openEuler-memlinkd",
+    "src-openEuler-libummu",
+    "src-openEuler-libvirt",
+    "src-openEuler-qemu",
+    "openEuler-Kernel",
+    "hucx",
+    "xucg",
+    "hmpi"
+  ],
+  "skipped_list": [],
+  "errors": {
+    "Ultrascan": {
+      "category": "branch_delete",
+      "message": "Cannot delete 'dev)' (current default branch on destination)"
+    },
+    "pvm": {
+      "category": "push_failed",
+      "message": "remote: fatal: pack exceeds maximum allowed size (2.00 GiB)"
+    },
+    "mysql-server": {
+      "category": "branch_delete",
+      "message": "Cannot delete '8.0)' (current default branch on destination)"
+    },
+    "snappy": {
+      "category": "hook_declined",
+      "message": "Rejected by destination server pre-receive hook"
+    },
+    "hadoop": {
+      "category": "branch_delete",
+      "message": "Cannot delete 'rel-2.7.7-aarch64)' (current default branch on destination)"
+    },
+    "zstd": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "KAE": {
+      "category": "branch_delete",
+      "message": "Cannot delete 'master)' (current default branch on destination)"
+    },
+    "hyperscan": {
+      "category": "branch_delete",
+      "message": "Cannot delete 'aarch64)' (current default branch on destination)"
+    },
+    "boostkit-bigdata": {
+      "category": "hook_declined",
+      "message": "Rejected by destination server pre-receive hook"
+    },
+    "infra": {
+      "category": "branch_delete",
+      "message": "Cannot delete 'main)' (current default branch on destination)"
+    },
+    "boostsra": {
+      "category": "branch_delete",
+      "message": "Cannot delete 'dev_for_doc_630)' (current default branch on destination)"
+    },
+    "tensorflow": {
+      "category": "branch_delete",
+      "message": "Cannot delete 'dev_for_doc_630)' (current default branch on destination)"
+    },
+    "anolis-cloud-kernel": {
+      "category": "push_failed",
+      "message": "remote: fatal: pack exceeds maximum allowed size (2.00 GiB)"
+    },
+    "velinux-kernel-dev": {
+      "category": "push_failed",
+      "message": "remote: fatal: pack exceeds maximum allowed size (2.00 GiB)"
+    },
+    "velinux-kernel": {
+      "category": "push_failed",
+      "message": "remote: fatal: pack exceeds maximum allowed size (2.00 GiB)"
+    },
+    "src-openeuler-gcc": {
+      "category": "large_file",
+      "message": "accelerate-libs.tar.gz is 91.97 MB, exceeds GitHub 100 MB limit"
+    },
+    "src-openEuler-memlinkd": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "src-openEuler-libummu": {
+      "category": "clone_failed",
+      "message": "Failed to clone from source (network/auth/availability issue)"
+    },
+    "src-openEuler-libvirt": {
+      "category": "large_file",
+      "message": "libvirt-9.10.0.tar.xz is 134.23 MB, exceeds GitHub 100 MB limit"
+    },
+    "src-openEuler-qemu": {
+      "category": "large_file",
+      "message": "qemu-4.0.0.tar.xz is 53.05 MB, exceeds GitHub 100 MB limit"
+    },
+    "openEuler-Kernel": {
+      "category": "push_failed",
+      "message": "remote: fatal: pack exceeds maximum allowed size (2.00 GiB)"
+    },
+    "hucx": {
+      "category": "branch_delete",
+      "message": "Cannot delete 'huawei)' (current default branch on destination)"
+    },
+    "xucg": {
+      "category": "branch_delete",
+      "message": "Cannot delete 'huawei)' (current default branch on destination)"
+    },
+    "hmpi": {
+      "category": "branch_delete",
+      "message": "Cannot delete 'huawei)' (current default branch on destination)"
+    }
+  },
+  "timestamp": "2026-07-14T14:05:33Z",
+  "diagnoses": {
+    "Ultrascan": [
+      "Source: Source repo not found or not accessible with current token",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "pvm": [
+      "Source: Source repo not found or not accessible with current token",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "mysql-server": [
+      "Source: Source repo not found or not accessible with current token",
+      "Destination: Repo is very large (3018MB) — may have timed out",
+      "Cached: not found (download may have failed)"
+    ],
+    "snappy": [
+      "Source: Source repo not found or not accessible with current token",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "hadoop": [
+      "Source: Source repo not found or not accessible with current token",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "zstd": [
+      "Source: Source repo not found or not accessible with current token",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "KAE": [
+      "Source: Source repo not found or not accessible with current token",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "hyperscan": [
+      "Source: Source repo not found or not accessible with current token",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "boostkit-bigdata": [
+      "Source: Source repo not found or not accessible with current token",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "infra": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "boostsra": [
+      "Source: Source repo not found or not accessible with current token",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "tensorflow": [
+      "Source: Source repo not found or not accessible with current token",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "anolis-cloud-kernel": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "velinux-kernel-dev": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "velinux-kernel": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "src-openeuler-gcc": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "src-openEuler-memlinkd": [
+      "Source: Source repo not found or not accessible with current token",
+      "Destination: Source repo not found or not accessible with current token",
+      "Cached: not found (download may have failed)"
+    ],
+    "src-openEuler-libummu": [
+      "Source: Source repo not found or not accessible with current token",
+      "Destination: Source repo not found or not accessible with current token",
+      "Cached: not found (download may have failed)"
+    ],
+    "src-openEuler-libvirt": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "src-openEuler-qemu": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "openEuler-Kernel": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "hucx": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "xucg": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ],
+    "hmpi": [
+      "Source: accessible",
+      "Destination: exists",
+      "Cached: not found (download may have failed)"
+    ]
+  }
+}
