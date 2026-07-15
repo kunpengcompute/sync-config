@@ -265,9 +265,13 @@ jobs:
           --output results.json
 
     - name: Update README with sync status
+      env:
+        HUB_COMMUNITY: "Kunpeng+BoostKit"
       run: python update_readme.py
 
     - name: Commit and push
+      env:
+        HUB_COMMUNITY: "Kunpeng+BoostKit"
       run: |
         git config user.name 'github-actions[bot]'
         git config user.email 'github-actions[bot]@users.noreply.github.com'
