@@ -15,6 +15,10 @@ This repository runs an automated daily workflow that mirrors repos from:
 | ---: | ---: | ---: | ---: |
 | 151 | 127 | 24 | 0 |
 
+📊 [查看详细同步状态（含失败原因诊断）](https://huanglei0308.github.io/community-mirror/community.html?org=Kunpeng%2BBoostKit)
+
+---
+
 ### 📊 Failure Summary
 
 | Category | Count |
@@ -27,186 +31,186 @@ This repository runs an automated daily workflow that mirrors repos from:
 
 ### ❌ Failed Repos
 
-- **`Ultrascan`** — Cannot delete 'dev)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
-
-- **`pvm`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
-
-- **`mysql-server`** — Cannot delete '8.0)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: Repo is very large (3018MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
-
-- **`snappy`** — Rejected by destination server pre-receive hook<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
-
-- **`hadoop`** — Cannot delete 'rel-2.7.7-aarch64)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
-
-- **`zstd`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
-
 - **`KAE`** — Cannot delete 'master)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`hyperscan`** — Cannot delete 'aarch64)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
-
-- **`boostkit-bigdata`** — Rejected by destination server pre-receive hook<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
-
-- **`infra`** — Cannot delete 'main)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
-
-- **`boostsra`** — Cannot delete 'dev_for_doc_630)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
-
-- **`tensorflow`** — Cannot delete 'dev_for_doc_630)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`Ultrascan`** — Cannot delete 'dev)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`anolis-cloud-kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`velinux-kernel-dev`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`boostkit-bigdata`** — Rejected by destination server pre-receive hook<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`velinux-kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`boostsra`** — Cannot delete 'dev_for_doc_630)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`src-openeuler-gcc`** — accelerate-libs.tar.gz is 91.97 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`hadoop`** — Cannot delete 'rel-2.7.7-aarch64)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`src-openEuler-memlinkd`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: Source repo not found or not accessible with current token<br>🔍 Cached: not found (download may have failed)
+- **`hmpi`** — Cannot delete 'huawei)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+
+- **`hucx`** — Cannot delete 'huawei)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+
+- **`hyperscan`** — Cannot delete 'aarch64)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+
+- **`infra`** — Cannot delete 'main)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+
+- **`mysql-server`** — Cannot delete '8.0)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: Repo is very large (3018MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
+
+- **`openEuler-Kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+
+- **`pvm`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+
+- **`snappy`** — Rejected by destination server pre-receive hook<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`src-openEuler-libummu`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: Source repo not found or not accessible with current token<br>🔍 Cached: not found (download may have failed)
 
 - **`src-openEuler-libvirt`** — libvirt-9.10.0.tar.xz is 134.23 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
+- **`src-openEuler-memlinkd`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: Source repo not found or not accessible with current token<br>🔍 Cached: not found (download may have failed)
+
 - **`src-openEuler-qemu`** — qemu-4.0.0.tar.xz is 53.05 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`openEuler-Kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`src-openeuler-gcc`** — accelerate-libs.tar.gz is 91.97 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`hucx`** — Cannot delete 'huawei)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`tensorflow`** — Cannot delete 'dev_for_doc_630)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+
+- **`velinux-kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+
+- **`velinux-kernel-dev`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`xucg`** — Cannot delete 'huawei)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`hmpi`** — Cannot delete 'huawei)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`zstd`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 [🔍 View workflow logs](https://github.com/kunpengcompute/sync-config/actions)
 
 <details>
 <summary><b>✅ Synced Repos (127)</b></summary>
 
-- `KVcache_lossless_compression`
-- `gd-hnsw`
-- `virt-efficiency`
+- `.atomgit`
+- `.gitcode`
+- `3FS`
+- `Brotli4j`
 - `CubeSandbox`
-- `kacc_crypto`
-- `OpenViking`
-- `LowLatencyLib`
-- `daft`
-- `OmniSkill`
-- `diskann`
-- `OmniCatalyst`
-- `spring-framework`
-- `tomcat`
-- `simdjson`
-- `rapidjson`
-- `fbthrift`
-- `brpc`
-- `kadd-open`
-- `pandas`
-- `numpy`
-- `malloc-bench`
-- `skills`
-- `boostida`
-- `ceph`
-- `suricata`
-- `tensorrt-llm`
-- `OmniAdaptor`
-- `flash-engram`
+- `DeepSeek-V3-Sample`
+- `HPC-competitions`
+- `HPCKit-Community`
+- `Infra`
+- `KDADK-TOOLS`
+- `KUAF`
+- `KVcache_lossless_compression`
+- `Kbox-patches`
 - `LMCache`
-- `mooncake`
-- `release-management`
+- `LowLatencyLib`
+- `MicroservicesBench`
+- `OmniAdaptor`
+- `OmniCatalyst`
+- `OmniSkill`
+- `OpenViking`
+- `QA`
+- `Redis`
 - `Security`
 - `SegmentCache`
-- `sonic`
-- `redis-dtoe`
-- `reedsolomon`
-- `rabitq`
-- `monolith`
-- `kaot`
-- `Brotli4j`
-- `isa-l`
-- `KDADK-TOOLS`
-- `QA`
-- `protobuf`
-- `KUAF`
-- `MicroservicesBench`
-- `cmf`
-- `ceph_BK`
-- `ocf`
-- `mesa`
-- `Kbox-patches`
-- `3FS`
-- `vmi`
-- `rocksdb`
-- `cloud-native`
-- `lz4`
-- `spdk`
-- `cloud-virtual`
-- `vllm_router`
-- `vllm-ops`
-- `velox`
-- `boostkit-agreements`
-- `Redis`
-- `folly`
-- `.gitcode`
-- `waas`
-- `zlib`
-- `sonic-cpp`
 - `avx2ki`
-- `kpglibc`
 - `boostcore`
-- `opencv`
-- `ffmpeg`
-- `libavif`
-- `libwebp`
-- `boostmedia`
 - `boostcph`
-- `boostvirt`
-- `milvus`
 - `boostdb`
+- `boostida`
+- `boostkit-agreements`
+- `boostmedia`
 - `boostsds`
-- `omnistatestore`
-- `omnistream`
-- `omnioperator`
-- `omniruntime`
-- `knewpfordelta`
-- `kvecturbo`
-- `faiss`
-- `hnswlib`
-- `tensorflow-serving`
+- `boostvirt`
+- `brpc`
+- `bytedance-hikptool`
+- `ceph`
+- `ceph_BK`
+- `cloud-native`
+- `cloud-virtual`
+- `cmf`
 - `community`
-- `ub-dkms-build`
-- `ub-os-component-dkms`
-- `ub-buildin-patch`
-- `src-elasticMem`
-- `hpckit-testsuite`
+- `daft`
+- `diskann`
+- `faiss`
+- `fbthrift`
+- `ffmpeg`
+- `flash-engram`
+- `folly`
+- `gd-hnsw`
+- `hnswlib`
 - `hpckit-packtool`
-- `HPC-competitions`
-- `src-openEuler-ubturbo`
-- `src-openEuler-ub-pkg-manager`
-- `sglang`
-- `src-openEuler-ubs-comm`
-- `src-openEuler-ubs-mem`
-- `src-openEuler-ubs-io`
-- `src-openEuler-ubs-virt`
-- `src-openEuler-ubs-engine`
-- `DeepSeek-V3-Sample`
 - `hpckit-sample`
-- `Infra`
-- `src-openEuler-libvirt-python`
+- `hpckit-testsuite`
+- `isa-l`
+- `kacc_crypto`
+- `kadd-open`
+- `kaot`
+- `knewpfordelta`
+- `kpglibc`
+- `kudnn`
 - `kunpeng-extension-for-pytorch`
 - `kupl`
-- `kutacc`
 - `kuqcd`
-- `kudnn`
-- `bytedance-hikptool`
-- `.atomgit`
-- `HPCKit-Community`
+- `kutacc`
+- `kvecturbo`
+- `libavif`
+- `libwebp`
+- `lz4`
+- `malloc-bench`
+- `mesa`
+- `milvus`
+- `monolith`
+- `mooncake`
+- `numpy`
+- `ocf`
+- `omnioperator`
+- `omniruntime`
+- `omnistatestore`
+- `omnistream`
 - `openEuler-libvirt`
 - `openEuler-qemu`
-- `src-openEuler-ubctl`
-- `src-openEuler-ubutils`
-- `src-openEuler-libcdma`
-- `src-openEuler-umdk`
-- `src-openEuler-sysSentry`
-- `src-openEuler-obmm`
+- `opencv`
+- `pandas`
+- `protobuf`
+- `rabitq`
+- `rapidjson`
+- `redis-dtoe`
+- `reedsolomon`
+- `release-management`
+- `rocksdb`
+- `sglang`
+- `simdjson`
+- `skills`
+- `sonic`
+- `sonic-cpp`
+- `spdk`
+- `spring-framework`
+- `src-elasticMem`
 - `src-openEuler-Kernel`
+- `src-openEuler-libcdma`
+- `src-openEuler-libvirt-python`
+- `src-openEuler-obmm`
+- `src-openEuler-sysSentry`
+- `src-openEuler-ub-pkg-manager`
+- `src-openEuler-ubctl`
+- `src-openEuler-ubs-comm`
+- `src-openEuler-ubs-engine`
+- `src-openEuler-ubs-io`
+- `src-openEuler-ubs-mem`
+- `src-openEuler-ubs-virt`
+- `src-openEuler-ubturbo`
+- `src-openEuler-ubutils`
+- `src-openEuler-umdk`
+- `suricata`
+- `tensorflow-serving`
+- `tensorrt-llm`
+- `tomcat`
+- `ub-buildin-patch`
+- `ub-dkms-build`
+- `ub-os-component-dkms`
+- `velox`
+- `virt-efficiency`
+- `vllm-ops`
+- `vllm_router`
+- `vmi`
+- `waas`
+- `zlib`
 
 </details>
 
