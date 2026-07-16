@@ -7,7 +7,7 @@ This repository runs an automated daily workflow that mirrors repos from:
 - **gitcode/BoostKit** → **github/kunpengcompute**
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-07-14T14:05:33Z
+**Last updated:** 2026-07-16T05:53:57Z
 **Flow:** `gitcode/kunpengcompute+BoostKit` → `github/kunpengcompute`
 **Status:** ⚠️ **24 repo(s) failed**
 
@@ -65,7 +65,7 @@ This repository runs an automated daily workflow that mirrors repos from:
 
 - **`src-openEuler-memlinkd`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: Source repo not found or not accessible with current token<br>🔍 Cached: not found (download may have failed)
 
-- **`src-openEuler-qemu`** — qemu-4.0.0.tar.xz is 53.05 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`src-openEuler-qemu`** — qemu-4.1.0.tar.xz is 51.50 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`src-openeuler-gcc`** — accelerate-libs.tar.gz is 91.97 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
