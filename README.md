@@ -7,13 +7,13 @@ This repository runs an automated daily workflow that mirrors repos from:
 - **gitcode/BoostKit** → **github/kunpengcompute**
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-07-16T05:53:57Z
+**Last updated:** 2026-07-17T05:58:02Z
 **Flow:** `gitcode/kunpengcompute+BoostKit` → `github/kunpengcompute`
-**Status:** ⚠️ **24 repo(s) failed**
+**Status:** ⚠️ **25 repo(s) failed**
 
 | Total | ✅ Synced | ❌ Failed | ⏭️ Skipped |
 | ---: | ---: | ---: | ---: |
-| 151 | 127 | 24 | 0 |
+| 151 | 126 | 25 | 0 |
 
 📊 [查看详细同步状态（含失败原因诊断）](https://huanglei0308.github.io/community-mirror/community.html?org=Kunpeng%2BBoostKit)
 
@@ -25,9 +25,9 @@ This repository runs an automated daily workflow that mirrors repos from:
 |----------|------:|
 | 🚫 Branch Delete Refused | 11 |
 | 📤 Push Rejected | 5 |
+| 🔒 Pre-receive Hook Declined | 3 |
 | 📥 Clone Failed | 3 |
 | 🔵 File Too Large (>100MB) | 3 |
-| 🔒 Pre-receive Hook Declined | 2 |
 
 ### ❌ Failed Repos
 
@@ -57,6 +57,8 @@ This repository runs an automated daily workflow that mirrors repos from:
 
 - **`pvm`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
+- **`skills`** — Rejected by destination server pre-receive hook<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+
 - **`snappy`** — Rejected by destination server pre-receive hook<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`src-openEuler-libummu`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: Source repo not found or not accessible with current token<br>🔍 Cached: not found (download may have failed)
@@ -65,9 +67,9 @@ This repository runs an automated daily workflow that mirrors repos from:
 
 - **`src-openEuler-memlinkd`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: Source repo not found or not accessible with current token<br>🔍 Cached: not found (download may have failed)
 
-- **`src-openEuler-qemu`** — qemu-4.1.0.tar.xz is 51.50 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`src-openEuler-qemu`** — qemu-4.0.1.tar.xz is 53.06 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`src-openeuler-gcc`** — accelerate-libs.tar.gz is 91.97 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`src-openeuler-gcc`** — gcc-12.3.0.tar.xz is 81.53 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`tensorflow`** — Cannot delete 'dev_for_doc_630)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
@@ -82,7 +84,7 @@ This repository runs an automated daily workflow that mirrors repos from:
 [🔍 View workflow logs](https://github.com/kunpengcompute/sync-config/actions)
 
 <details>
-<summary><b>✅ Synced Repos (127)</b></summary>
+<summary><b>✅ Synced Repos (126)</b></summary>
 
 - `.atomgit`
 - `.gitcode`
@@ -176,7 +178,6 @@ This repository runs an automated daily workflow that mirrors repos from:
 - `rocksdb`
 - `sglang`
 - `simdjson`
-- `skills`
 - `sonic`
 - `sonic-cpp`
 - `spdk`
