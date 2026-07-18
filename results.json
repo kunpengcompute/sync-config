@@ -2,9 +2,9 @@
   "src": "gitcode/kunpengcompute+BoostKit",
   "dst": "github/kunpengcompute",
   "workflow": "repo-mirror",
-  "timestamp": "2026-07-17T05:58:02Z",
-  "total": 151,
-  "success": 126,
+  "timestamp": "2026-07-18T05:37:17Z",
+  "total": 153,
+  "success": 128,
   "skipped": 0,
   "failed": 25,
   "success_list": [
@@ -32,6 +32,7 @@
     "Redis",
     "Security",
     "SegmentCache",
+    "alphafold3",
     "avx2ki",
     "boostcore",
     "boostcph",
@@ -73,6 +74,7 @@
     "kuqcd",
     "kutacc",
     "kvecturbo",
+    "lammps",
     "libavif",
     "libwebp",
     "lz4",
@@ -226,7 +228,7 @@
     },
     "src-openeuler-gcc": {
       "category": "large_file",
-      "message": "gcc-12.3.0.tar.xz is 81.53 MB, exceeds GitHub 100 MB limit"
+      "message": "accelerate-libs.tar.gz is 91.97 MB, exceeds GitHub 100 MB limit"
     },
     "src-openEuler-memlinkd": {
       "category": "clone_failed",
@@ -242,7 +244,7 @@
     },
     "src-openEuler-qemu": {
       "category": "large_file",
-      "message": "qemu-4.0.1.tar.xz is 53.06 MB, exceeds GitHub 100 MB limit"
+      "message": "qemu-4.1.0.tar.xz is 51.50 MB, exceeds GitHub 100 MB limit"
     },
     "openEuler-Kernel": {
       "category": "push_failed",
@@ -394,9 +396,9 @@
   },
   "workflows": {
     "repo-mirror": {
-      "timestamp": "2026-07-17T05:58:02Z",
-      "total": 151,
-      "success": 126,
+      "timestamp": "2026-07-18T05:37:17Z",
+      "total": 153,
+      "success": 128,
       "failed": 25,
       "skipped": 0
     }
