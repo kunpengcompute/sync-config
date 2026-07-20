@@ -2,9 +2,9 @@
   "src": "gitcode/kunpengcompute+BoostKit",
   "dst": "github/kunpengcompute",
   "workflow": "repo-mirror",
-  "timestamp": "2026-07-19T06:05:50Z",
-  "total": 154,
-  "success": 129,
+  "timestamp": "2026-07-20T06:38:03Z",
+  "total": 155,
+  "success": 130,
   "skipped": 0,
   "failed": 25,
   "success_list": [
@@ -123,6 +123,7 @@
     "src-openEuler-ubturbo",
     "src-openEuler-ubutils",
     "src-openEuler-umdk",
+    "src-openEuler-zookeeper",
     "suricata",
     "tensorflow-serving",
     "tensorrt-llm",
@@ -229,7 +230,7 @@
     },
     "src-openeuler-gcc": {
       "category": "large_file",
-      "message": "gcc-12.3.0.tar.xz is 81.53 MB, exceeds GitHub 100 MB limit"
+      "message": "accelerate-libs.tar.gz is 91.97 MB, exceeds GitHub 100 MB limit"
     },
     "src-openEuler-memlinkd": {
       "category": "clone_failed",
@@ -397,9 +398,9 @@
   },
   "workflows": {
     "repo-mirror": {
-      "timestamp": "2026-07-19T06:05:50Z",
-      "total": 154,
-      "success": 129,
+      "timestamp": "2026-07-20T06:38:03Z",
+      "total": 155,
+      "success": 130,
       "failed": 25,
       "skipped": 0
     }

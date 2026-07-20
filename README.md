@@ -7,13 +7,13 @@ This repository runs an automated daily workflow that mirrors repos from:
 - **gitcode/BoostKit** → **github/kunpengcompute**
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-07-19T06:05:50Z
+**Last updated:** 2026-07-20T06:38:03Z
 **Flow:** `gitcode/kunpengcompute+BoostKit` → `github/kunpengcompute`
 **Status:** ⚠️ **25 repo(s) failed**
 
 | Total | ✅ Synced | ❌ Failed | ⏭️ Skipped |
 | ---: | ---: | ---: | ---: |
-| 154 | 129 | 25 | 0 |
+| 155 | 130 | 25 | 0 |
 
 📊 [查看详细同步状态（含失败原因诊断）](https://huanglei0308.github.io/community-mirror/community.html?org=Kunpeng%2BBoostKit)
 
@@ -69,7 +69,7 @@ This repository runs an automated daily workflow that mirrors repos from:
 
 - **`src-openEuler-qemu`** — qemu-4.1.0.tar.xz is 51.50 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`src-openeuler-gcc`** — gcc-12.3.0.tar.xz is 81.53 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`src-openeuler-gcc`** — accelerate-libs.tar.gz is 91.97 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`tensorflow`** — Cannot delete 'dev_for_doc_630)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
@@ -84,7 +84,7 @@ This repository runs an automated daily workflow that mirrors repos from:
 [🔍 View workflow logs](https://github.com/kunpengcompute/sync-config/actions)
 
 <details>
-<summary><b>✅ Synced Repos (129)</b></summary>
+<summary><b>✅ Synced Repos (130)</b></summary>
 
 - `.atomgit`
 - `.gitcode`
@@ -201,6 +201,7 @@ This repository runs an automated daily workflow that mirrors repos from:
 - `src-openEuler-ubturbo`
 - `src-openEuler-ubutils`
 - `src-openEuler-umdk`
+- `src-openEuler-zookeeper`
 - `suricata`
 - `tensorflow-serving`
 - `tensorrt-llm`
