@@ -7,13 +7,13 @@ This repository runs an automated daily workflow that mirrors repos from:
 - **gitcode/BoostKit** → **github/kunpengcompute**
 
 <!-- SYNC_STATUS_START -->
-**Last updated:** 2026-07-20T06:38:03Z
+**Last updated:** 2026-07-21T06:05:54Z
 **Flow:** `gitcode/kunpengcompute+BoostKit` → `github/kunpengcompute`
-**Status:** ⚠️ **25 repo(s) failed**
+**Status:** ⚠️ **27 repo(s) failed**
 
 | Total | ✅ Synced | ❌ Failed | ⏭️ Skipped |
 | ---: | ---: | ---: | ---: |
-| 155 | 130 | 25 | 0 |
+| 155 | 128 | 27 | 0 |
 
 📊 [查看详细同步状态（含失败原因诊断）](https://huanglei0308.github.io/community-mirror/community.html?org=Kunpeng%2BBoostKit)
 
@@ -23,11 +23,11 @@ This repository runs an automated daily workflow that mirrors repos from:
 
 | Category | Count |
 |----------|------:|
-| 🚫 Branch Delete Refused | 11 |
+| 🚫 Branch Delete Refused | 12 |
 | 📤 Push Rejected | 5 |
+| 🔵 File Too Large (>100MB) | 4 |
 | 🔒 Pre-receive Hook Declined | 3 |
 | 📥 Clone Failed | 3 |
-| 🔵 File Too Large (>100MB) | 3 |
 
 ### ❌ Failed Repos
 
@@ -51,6 +51,10 @@ This repository runs an automated daily workflow that mirrors repos from:
 
 - **`infra`** — Cannot delete 'main)' (current default branch on destination)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
+- **`lammps`** — potentials/C_10_10.mesocnt is 82.67 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+
+- **`lance`** — Cannot delete 'master)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+
 - **`mysql-server`** — Cannot delete '8.0)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: Repo is very large (3018MB) — may have timed out<br>🔍 Cached: not found (download may have failed)
 
 - **`openEuler-Kernel`** — remote: fatal: pack exceeds maximum allowed size (2.00 GiB)<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
@@ -67,9 +71,9 @@ This repository runs an automated daily workflow that mirrors repos from:
 
 - **`src-openEuler-memlinkd`** — Failed to clone from source (network/auth/availability issue)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: Source repo not found or not accessible with current token<br>🔍 Cached: not found (download may have failed)
 
-- **`src-openEuler-qemu`** — qemu-4.1.0.tar.xz is 51.50 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`src-openEuler-qemu`** — qemu-5.0.0.tar.xz is 59.53 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
-- **`src-openeuler-gcc`** — accelerate-libs.tar.gz is 91.97 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
+- **`src-openeuler-gcc`** — gcc-12.3.0.tar.xz is 81.53 MB, exceeds GitHub 100 MB limit<br>🔍 Source: accessible<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
 - **`tensorflow`** — Cannot delete 'dev_for_doc_630)' (current default branch on destination)<br>🔍 Source: Source repo not found or not accessible with current token<br>🔍 Destination: exists<br>🔍 Cached: not found (download may have failed)
 
@@ -84,7 +88,7 @@ This repository runs an automated daily workflow that mirrors repos from:
 [🔍 View workflow logs](https://github.com/kunpengcompute/sync-config/actions)
 
 <details>
-<summary><b>✅ Synced Repos (130)</b></summary>
+<summary><b>✅ Synced Repos (128)</b></summary>
 
 - `.atomgit`
 - `.gitcode`
@@ -152,8 +156,6 @@ This repository runs an automated daily workflow that mirrors repos from:
 - `kuqcd`
 - `kutacc`
 - `kvecturbo`
-- `lammps`
-- `lance`
 - `libavif`
 - `libwebp`
 - `lz4`
